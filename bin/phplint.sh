@@ -101,9 +101,9 @@ done
 
 # Print the positive or negative result.
 if [ ${LINT_RESULT} != 0 ]; then
-    echo -e "\e[0;31mThere were syntax errors!\e[0m"
+    echo -e "\e[0;31mThere are syntax errors!\e[0m"
 else
-    echo -e "\e[0;32mThere were no syntax errors!\e[0m"
+    echo -e "\e[0;32mNo syntax errors detected.\e[0m"
 fi
 
 exit ${LINT_RESULT}
