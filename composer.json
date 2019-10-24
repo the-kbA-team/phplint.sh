@@ -1,0 +1,29 @@
+{
+    "name": "kba-team/phplint.sh",
+    "description": "Bash script to lint PHP files in the given directories.",
+    "type": "tools",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "keywords": [
+        "PHP",
+        "lint",
+        "syntax",
+        "check",
+        "shell",
+        "bash",
+        "script"
+    ],
+    "authors": [
+        {
+            "name": "Martin Mitterhauser",
+            "role": "Developer"
+        },
+        {
+            "name": "Gregor J.",
+            "role": "maintainer"
+        }
+    ],
+    "bin": [
+        "bin/phplint.sh"
+    ]
+}
