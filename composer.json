@@ -25,5 +25,8 @@
     ],
     "bin": [
         "bin/phplint.sh"
-    ]
+    ],
+    "require": {
+        "php": "*"
+    }
 }
