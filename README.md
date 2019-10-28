@@ -17,5 +17,5 @@ Usage: `phplint.sh [options] <directory> [<directory> ...]`
 Include this package using composer.
 
 ```bash
-composer require kba-team/phplint.sh: "~1.0"
+composer require --dev kba-team/phplint.sh:"~1.0"
 ```
