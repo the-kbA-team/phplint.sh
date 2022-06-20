@@ -93,9 +93,15 @@ fi
 # Run `php -l` for each file matching each extension found in each directory.
 for dir in "${LINT_DIR[@]}"; do
     for ext in "${LINT_EXT[@]}"; do
+        # a for loop is necessary to overwrite LINT_RESULT in case of an error.
+        # A find | while would create a subshell.
+        OLDIFS="$IFS"
+        IFS=$(printf "\n\b")
+        # shellcheck disable=SC2044
         for file in $(find "${dir}" -type f -name "${ext}") ; do
             php -l "${file}" > ${LINT_OUT} || LINT_RESULT=3
         done
+        IFS="$OLDIFS"
     done
 done
 
